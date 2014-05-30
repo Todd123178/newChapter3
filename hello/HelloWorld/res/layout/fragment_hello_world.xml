@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.helloworld.HelloWorldActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/textViewDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/hello_world"
+        android:textSize="@dimen/message_text_view" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:text="Name:"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+<Button
+        android:id="@+id/clearDisplay"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buttonDisplay"
+        android:layout_alignBottom="@+id/buttonDisplay"
+        android:layout_marginLeft="18dp"
+        android:layout_toRightOf="@+id/buttonDisplay"
+        android:text="Clear" />
+<Button
+        android:id="@+id/buttonDisplay"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="97dp"
+        android:text="Display" />
+
+<EditText
+    android:id="@+id/editlastName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/editTextName"
+    android:layout_below="@+id/editTextName"
+    android:layout_marginTop="14dp"
+    android:ems="10"
+    android:inputType="textPersonName" />
+
+<EditText
+    android:id="@+id/editTextName"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignBaseline="@+id/textView1"
+    android:layout_alignBottom="@+id/textView1"
+    android:layout_toRightOf="@+id/textView1"
+    android:ems="10"
+    android:inputType="textPersonName" >
+
+    <requestFocus />
+</EditText>
+
+<TextView
+    android:id="@+id/textView2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignTop="@+id/editlastName"
+    android:layout_toLeftOf="@+id/editlastName"
+    android:text="Last Name:"
+    android:textAppearance="?android:attr/textAppearanceSmall" />
+
+</RelativeLayout>

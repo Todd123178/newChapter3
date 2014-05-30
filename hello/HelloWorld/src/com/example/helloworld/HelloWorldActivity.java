@@ -92,7 +92,7 @@ public class HelloWorldActivity extends ActionBarActivity {
     	@Override
     	public void onClick(View arg0){
     		EditText editName= (EditText) findViewById(R.id.editTextName);
-    		EditText lastName=(EditText) findViewById(R.id.editTextName);
+    		EditText lastName=(EditText) findViewById(R.id.editlastName);
     		TextView textDisplay =(TextView) findViewById(R.id.textViewDisplay);
     		textDisplay.setText("Hello World!");
     		editName.setText(" ");
